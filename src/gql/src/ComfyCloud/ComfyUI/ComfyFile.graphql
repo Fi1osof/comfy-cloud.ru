@@ -1,0 +1,3 @@
+query comfyFileContent($where: ComfyFileWhereUniqueInput!) {
+  comfyFileContent(where: $where)
+}

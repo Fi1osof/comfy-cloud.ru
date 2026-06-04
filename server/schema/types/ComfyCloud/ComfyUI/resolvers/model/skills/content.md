@@ -1,0 +1,3 @@
+# Available ComfyUI Models
+
+{{models}}

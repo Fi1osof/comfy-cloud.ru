@@ -1,0 +1,11 @@
+# mutation comfyGenerateImage($data: ComfyGenerateImageDataInput!) {
+#   comfyGenerateImage(data: $data)
+# }
+
+mutation comfyCreateJob($workflow: Json!) {
+  comfyCreateJob(workflow: $workflow) {
+    prompt_id
+    error
+    node_errors
+  }
+}

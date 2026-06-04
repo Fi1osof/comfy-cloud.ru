@@ -1,0 +1,17 @@
+query comfyHistoryItem($promptId: ID!) {
+  comfyHistoryItem(promptId: $promptId) {
+    ...ComfyHistoryItem_
+  }
+}
+
+fragment ComfyHistoryItem_ on ComfyHistoryItem {
+  id
+  meta
+  outputs
+  status {
+    completed
+    status_str
+    messages
+  }
+  prompt
+}
